@@ -129,3 +129,26 @@ Duplicate elements found:
 1
 7
 4
+
+⭐Question:
+Write a Java program to generate a random number between 1 and 100 and display it.
+
+📝 Explanation:
+👉 The task is to create a random number in the range 1–100.
+ 👉 Java provides the Random class from java.util package.
+ 👉 random.nextInt(100) generates numbers from 0 to 99.
+ 👉 By adding +1, we shift the range to 1–100.
+
+⚙️ Logic:
+Import java.util.Random.
+Create an object of Random.
+Use nextInt(100) + 1 to generate the number.
+Print the result.
+
+📊 Example Run:
+Output 1:
+ Generated number is: 34
+Output 2:
+ Generated number is: 87
+(💡 Each time the output changes because it’s random!)
+
