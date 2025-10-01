@@ -38,7 +38,7 @@ Animals make sounds
 Dog barks
 Cat meows
 
-🔹 Question:
+⭐Question:
  Write a Java program to demonstrate Method Overloading by creating a calculator that can add both integers and doubles.
 
 🔹 Explanation:
@@ -69,3 +69,5 @@ System.out.println("Double result: " + c.add(2.5, 3.5));
 Output:
 Int result: 15
 Double result: 6.0
+
+⭐
