@@ -101,3 +101,31 @@ Program executes the respective case and prints result.
  Enter second number: 15
 ✅ Output:
  Result is: 35
+
+ ⭐ Question:
+Write a Java program to find and print the duplicate elements present in an integer array.
+
+📝 Explanation:
+When working with arrays, sometimes the same element appears more than once.
+ 
+⚙️ Logic:
+Take an array of integers.
+Use two nested loops:
+Outer loop picks each element.
+Inner loop checks it with the remaining elements.
+If a match is found → Print that element as a duplicate.
+
+🔄 Working:
+Input Array → {6, 2, 8, 1, 4, 2, 7, 9, 5, 1, 7, 4}
+Check each number against all the numbers after it.
+Print only if duplicates are found.
+
+📊 Example Input & Output:
+✅ Input:
+ {6, 2, 8, 1, 4, 2, 7, 9, 5, 1, 7, 4}
+✅ Output:
+Duplicate elements found:
+2
+1
+7
+4
