@@ -1,0 +1,36 @@
+// Parent Class
+class Animal {
+    void sound() {
+        System.out.println("Animals make sounds");
+    }
+}
+
+// Child Class: Dog
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+// Child Class: Cat
+class Cat extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+// Main Class
+public class Main {
+    public static void main(String[] args) {
+        Animal a1 = new Animal();
+        a1.sound();  // Calls Animal's version
+
+        Animal a2 = new Dog();
+        a2.sound();  // Calls Dog's version
+
+        Animal a3 = new Cat();
+        a3.sound();  // Calls Cat's version
+    }
+}
