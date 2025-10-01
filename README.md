@@ -70,4 +70,34 @@ Output:
 Int result: 15
 Double result: 6.0
 
-⭐
+⭐ Question:
+Write a Java program to design a simple calculator that can perform:
+ 1️⃣ Addition
+ 2️⃣ Subtraction
+ 3️⃣ Multiplication
+ 4️⃣ Division
+The user should input two numbers and choose an operation.
+
+📝 Explanation:
+A calculator is one of the best beginner-friendly programs.
+ Here, we’ll use a switch statement to decide which operation to perform based on user input.
+
+⚙️ Logic:
+Take two integer inputs from the user.
+Display operation choices (Add, Subtract, Multiply, Divide).
+Use a switch case to perform the selected operation.
+Handle division by zero safely.
+Print the final result.
+
+🔄 Working:
+User enters two numbers.
+User selects an operator (1, 2, 3, or 4).
+Program executes the respective case and prints result.
+
+📊 Example Input & Output:
+✅ Input:
+ Choose operator: 1
+ Enter first number: 20
+ Enter second number: 15
+✅ Output:
+ Result is: 35
