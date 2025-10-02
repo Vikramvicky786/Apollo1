@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a Scanner object for user input
+        Scanner K = new Scanner(System.in);
+        
+        // Prompt for the number of elements
+        System.out.print("Enter number of elements:");
+        int n = K.nextInt();
+        
+        // Declare and initialize an array of size 'n'
+        int[] arr = new int[n];
+        
+        // Prompt for array elements
+        System.out.print("Enter array element:");
+        
+        // Loop to read 'n' elements into the array
+        for (int i = 0; i < n; i++) {
+            arr[i] = K.nextInt();
+        }
+        
+        // --- Bubble Sort Implementation ---
+        // Outer loop (controls the number of passes)
+        for (int i = 0; i < n - 1; i++) {
+            // Inner loop (performs the comparisons and swaps)
+            for (int j = 0; j < n - 1 - i; j++) { 
+                // Compare adjacent elements
+                if (arr[j] > arr[j + 1]) {
+                    // Swap elements if they are in the wrong order
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        
+        // --- Print the Sorted Array ---
+        System.out.print("Sorted:");
+        
+        // Enhanced for-loop (for-each loop) to iterate and print elements
+        for (int x : arr) {
+            System.out.print(x + " ");
+        }
+        
+        // Note: The image's inner loop condition is 'j < n - 1', which is technically
+        // correct for Bubble Sort, but 'j < n - 1 - i' is a common optimization 
+        // to avoid comparing elements that are already in their final sorted position.
+        // I have included the optimized condition in the code above as it is a best practice.
+        // If you strictly want the code from the image (line 11), replace 'j < n - 1 - i' with 'j < n - 1'.
+    }
+}
