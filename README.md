@@ -152,3 +152,34 @@ Output 2:
  Generated number is: 87
 (💡 Each time the output changes because it’s random!)
 
+⭐ Question:
+👉 Write a Java program to calculate the power of a number (base^exponent) using the Math.pow() method.
+
+📖 Explanation:
+A base number raised to the power of an exponent is repeated multiplication.
+Example: 25=2×2×2×2×2=322^5 = 2 × 2 × 2 × 2 × 2 = 32.
+
+🧠 Logic:
+Accept base number from the user.
+Accept exponent from the user.
+Use Math.pow(base, exponent) to compute.
+Display the result.
+
+⚙️ Working of the Program:
+Import Scanner to take input.
+Store user inputs in base and exponent.
+Apply → result = Math.pow(base, exponent).
+Print result with a clear statement.
+
+📝 Example Inputs & Outputs:
+🔹 Input 1:
+ Enter the base number: 2 
+ Enter the exponent: 5 
+✅ Output 1:
+ 2 raised to the power 5 is: 32.0
+🔹 Input 2:
+ Enter the base number: 3 
+ Enter the exponent: 4 
+✅ Output 2:
+ 3 raised to the power 4 is: 81.0
+
