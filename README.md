@@ -183,3 +183,34 @@ Print result with a clear statement.
 ✅ Output 2:
  3 raised to the power 4 is: 81.0
 
+⭐Problem Statement :-
+👉 Write a Java program to sort an array of integers using Bubble Sort algorithm.
+
+📝 Explanation :-
+🔹 Bubble Sort is the simplest sorting algorithm.
+ 🔹 It repeatedly compares adjacent elements and swaps them if they are in the wrong order.
+ 🔹 This process continues until the array is completely sorted.
+ 🔹 Though not the most efficient (O(n²)), it’s great for learning sorting basics.
+
+💡 Logic :-
+Take input n (number of elements).
+Read the array from user.
+Run two nested loops:
+Outer loop → number of passes.
+Inner loop → compares adjacent elements.
+Swap if elements are out of order.
+Optimize with a flag → if no swap happens, array is already sorted.
+
+⚙️ Working :-
+🔸 Input Array → [6, 2, 8, 1, 9]
+ 🔸 Pass 1 → [2, 6, 1, 8, 9]
+ 🔸 Pass 2 → [2, 1, 6, 8, 9]
+ 🔸 Pass 3 → [1, 2, 6, 8, 9]
+ ✅ Sorted Output → [1, 2, 6, 8, 9]
+
+🖥 Example :-
+Input:
+ Enter number of elements: 5 
+ Enter array elements: 6 2 8 1 9 
+Output:
+ Sorted: 1 2 6 8 9
