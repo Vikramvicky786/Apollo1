@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from the console
+        Scanner sc = new Scanner(System.in);
+        
+        // Prompt the user for the base number and read the integer input
+        System.out.print("Enter the base number: ");
+        int base = sc.nextInt();
+        
+        // Prompt the user for the exponent and read the integer input
+        System.out.print("Enter the exponent: ");
+        int exponent = sc.nextInt();
+        
+        // Calculate the result (base raised to the power of exponent)
+        // Math.pow returns a double, so the result variable is a double
+        double result = Math.pow(base, exponent);
+        
+        // Print the final result
+        System.out.println(base + " raised to the power " + exponent + " is: " + result);
+    }
+}
