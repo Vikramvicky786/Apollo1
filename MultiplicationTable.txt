@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String args[]) {
+        // Declare an integer variable to store the user's number
+        int n;
+        
+        // Create a Scanner object to read user input
+        Scanner sc = new Scanner(System.in);
+        
+        // Prompt the user to enter a number
+        System.out.print("Enter the Number: ");
+        
+        // Read the number from the user
+        n = sc.nextInt(); 
+        
+        // Print the header for the output
+        System.out.println("Multiplication Table: ");
+        
+        // Loop from i = 1 to i = 12
+        for (int i = 1; i <= 12; i++) {
+            // Calculate and print the multiplication step in the format: n * i = (n * i)
+            System.out.println(n + " * " + i + " = " + (n * i));
+        }
+        
+        // Close the scanner object
+        sc.close();
+    }
+}
