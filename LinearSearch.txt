@@ -1,0 +1,65 @@
+
+import java.util.*;
+
+public class LinearSearch {
+	
+
+
+	    public static void main(String[] args) {
+	        // Create a Scanner object to read user input
+	        Scanner K = new Scanner(System.in);
+	        
+	        // --- Array Input ---
+	        // Prompt for the number of elements
+	        System.out.print("Enter number of elements:");
+	        
+	        // Read the number of elements
+	        int n = K.nextInt();
+	        
+	        // Declare and instantiate the array
+	        int[] arr = new int[n];
+	        
+	        // Prompt the user to enter array elements
+	        System.out.print("Enter array element:");
+	        
+	        // Read the array elements
+	        for (int i = 0; i < n; i++) {
+	            arr[i] = K.nextInt();
+	        }
+	        
+	        // --- Search Setup ---
+	        // Prompt for the element to search for
+	        System.out.print("Enter element to search:");
+	        
+	        // Read the key element
+	        int key = K.nextInt();
+	        
+	        // Flag to track if the element is found
+	        boolean found = false;
+	        
+	        // --- Linear Search Algorithm ---
+	        for (int i = 0; i < n; i++) {
+	            // Check if the current array element matches the key
+	            if (arr[i] == key) {
+	                // If found, print the index
+	                System.out.print("Element found at index: " + i);
+	                
+	                // Set the flag to true
+	                found = true;
+	                
+	                // Exit the loop immediately since the element is found
+	                break;
+	            }
+	        }
+	        
+	        // --- Output Result ---
+	        // If the loop finished without finding the element (found is still false)
+	        if (!found) {
+	            System.out.print("element not found");
+	        }
+	        
+	        // Close the scanner object
+	        K.close();
+	    }
+	
+}
