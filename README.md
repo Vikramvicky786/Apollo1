@@ -330,3 +330,35 @@ Enter array elements: 10 20 30 40
 Enter element to search: 25 
 Output 2:
 Element not found
+
+⭐ 📝 Question:
+ Write a Java program to check whether a given year is a Leap Year or not.
+
+💡 Explanation:
+A Leap Year is a year that has 366 days instead of 365.
+ 👉 Rules to determine a Leap Year:
+A year is a leap year if it is divisible by 4.
+But if the year is divisible by 100, it must also be divisible by 400 to be a leap year.
+
+⚡ Logic Used:
+✔️ If (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) → Leap Year
+ ✔️ Else → Not a Leap Year
+
+⚙️ Working of Code:
+1️⃣ User enters a year.
+ 2️⃣ Condition checks whether it satisfies leap year rules.
+ 3️⃣ Output is displayed as → "Leap Year" or "Not a Leap Year".
+
+💻 Example Inputs & Outputs:
+📥 Input 1:
+Enter a year: 2024
+📤 Output 1:
+2024 is a Leap Year.
+📥 Input 2:
+Enter a year: 2100
+📤 Output 2:
+2100 is NOT a Leap Year.
+📥 Input 3:
+Enter a year: 2000
+📤 Output 3:
+2000 is a Leap Year.
