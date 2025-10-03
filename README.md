@@ -362,3 +362,47 @@ Enter a year: 2100
 Enter a year: 2000
 📤 Output 3:
 2000 is a Leap Year.
+
+⭐Question:
+ ➡️ Write a Java program to generate and display the multiplication table of any number entered by the user.
+
+💡 Explanation:
+🔹 A multiplication table is one of the simplest yet most important exercises to build programming logic.
+
+ 🔹 Steps:
+ 1️⃣ User inputs a number.
+ 2️⃣ A for loop runs from 1 to 12.
+ 3️⃣ Each iteration multiplies the number with the loop counter.
+ 4️⃣ Result is displayed in the format 👉 n * i = result.
+
+⚡ Logic Used:
+✅ Take input using Scanner.
+ ✅ Use a for loop to repeat multiplication up to 12.
+ ✅ Print the result in each step.
+
+⚙️ Working of Code:
+🔸 Enter a number → n
+ 🔸 Loop runs from 1 to 12
+ 🔸 Each step → n * i is calculated and displayed.
+
+💻 Example Input & Output:
+📥 Input:
+Enter the Number: 9
+📤 Output:
+Multiplication Table: 
+9*1=9 
+9*2=18 
+9*3=27 
+9*4=36 
+9*5=45 
+9*6=54 
+9*7=63 
+9*8=72 
+9*9=81 
+9*10=90 
+9*11=99 
+9*12=108
+ 
+
+
+
