@@ -291,3 +291,42 @@ Enter Number of elements: 10
 Enter array elements: 5 7 8 2 9 0 3 1 4 6 
 Output:
 Sorted: 0 1 2 3 4 5 6 7 8 9
+
+⭐ Question:
+Write a Java program to perform Linear Search. The program should accept an array of integers and a key element, then search the key in the array. If found, print the index, else display "Element not found".
+
+📖 Explanation:
+Linear Search is the simplest searching algorithm. We sequentially check each element of the array until the key is found or we reach the end.
+If arr[i] == key, element is found ✅
+Otherwise, continue searching 🔍
+If the loop ends without a match, element doesn’t exist ❌
+
+⚡ Logic Used:
+Input the array size n.
+Accept n array elements.
+Input the search element key.
+Traverse the array one-by-one using a loop.
+Compare each element with key.
+If found → print index & exit.
+If not found → display message.
+
+⚙ Working of Code:
+Uses a for loop to scan the array.
+A boolean flag (found) tracks if the element exists.
+If found → loop breaks immediately for efficiency.
+Else → prints "Element not found".
+
+🧪 Example Input & Output:
+Input 1:
+Enter number of elements: 5 
+Enter array elements: 1 2 3 4 5 
+Enter element to search: 4 
+Output 1:
+Element found at index: 3
+
+Input 2:
+Enter number of elements: 4 
+Enter array elements: 10 20 30 40 
+Enter element to search: 25 
+Output 2:
+Element not found
