@@ -261,3 +261,33 @@ Enter number of elements: 10
 Enter array element: 34 31 56 12 37 15 28 4 24 10
 📤 Output:
 Sorted: 4 10 12 15 24 28 31 34 37 56
+
+⭐Write a Java program to sort an array of integers using the Insertion Sort technique.
+
+📖 Explanation:
+Insertion Sort builds the sorted array one item at a time:
+Start from the 2nd element → compare it with previous elements.
+Shift the elements to the right until the correct position is found.
+Insert the key in its correct position.
+Repeat until the whole array is sorted.
+
+⚡ Logic Used:
+Input the size of the array.
+Store elements in an array.
+For each element (from index 1 to n-1):
+Compare with elements on the left.
+Shift larger elements to the right.
+Insert the current element in its correct position.
+Print the sorted array.
+
+⚙ Working of Code:
+Outer loop → traverses unsorted elements.
+Inner loop (while) → shifts elements until correct position is found.
+Each iteration extends the sorted portion of the array.
+
+🧪 Example Input & Output:
+Input:
+Enter Number of elements: 10 
+Enter array elements: 5 7 8 2 9 0 3 1 4 6 
+Output:
+Sorted: 0 1 2 3 4 5 6 7 8 9
