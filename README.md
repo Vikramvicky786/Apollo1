@@ -237,3 +237,27 @@ Enter number of elements: 10
 Enter array element: 34 31 56 12 37 15 28 4 24 10
 📤 Output:
 Sorted: 4 10 12 15 24 28 31 34 37 56
+
+💻Problem Statement:
+ 👉 Write a Java program to sort an array of integers using the Selection Sort algorithm.
+
+📖 Explanation:
+ Selection Sort is a simple algorithm that works like this:
+ ✅ Divide the array into sorted and unsorted parts.
+ ✅ Repeatedly select the minimum element from the unsorted part.
+ ✅ Swap it with the first unsorted element.
+ ✅ Continue until the entire array is sorted.
+
+🧠 Logic & Working:
+ 1️⃣ Input the array size & elements.
+ 2️⃣ For each index, assume it’s the minimum.
+ 3️⃣ Find the actual minimum from the remaining array.
+ 4️⃣ Swap it with the current index.
+ 5️⃣ Repeat for all elements.
+
+⚙️ Example Run:
+📥 Input:
+Enter number of elements: 10
+Enter array element: 34 31 56 12 37 15 28 4 24 10
+📤 Output:
+Sorted: 4 10 12 15 24 28 31 34 37 56
