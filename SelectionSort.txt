@@ -1,0 +1,55 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a Scanner object to read user input
+        Scanner K = new Scanner(System.in);
+        
+        // Prompt the user for the number of elements
+        System.out.print("Enter number of elements:");
+        
+        // Read the number of elements
+        int n = K.nextInt();
+        
+        // Declare and instantiate the array
+        int[] arr = new int[n];
+        
+        // Prompt the user to enter array elements
+        System.out.print("Enter array element:");
+        
+        // Read the array elements from the user
+        for (int i = 0; i < n; i++) {
+            arr[i] = K.nextInt();
+        }
+        
+        // --- Selection Sort Algorithm ---
+        // Outer loop iterates through the unsorted part of the array
+        for (int i = 0; i < n - 1; i++) {
+            // Assume the current element is the minimum
+            int min = i;
+            
+            // Inner loop finds the actual minimum element in the remaining unsorted array
+            for (int j = i + 1; j < n; j++) {
+                // If a smaller element is found, update the index of the minimum element
+                if (arr[j] < arr[min]) {
+                    min = j;
+                }
+            }
+            
+            // Swap the found minimum element with the current element (arr[i])
+            // This places the minimum element at its correct sorted position
+            int temp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = temp;
+        }
+        
+        // --- Print the sorted array ---
+        System.out.print("Sorted:");
+        for (int x : arr) {
+            System.out.print(x + " ");
+        }
+        
+        // Close the scanner object
+        K.close();
+    }
+}
